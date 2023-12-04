@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let dagVanDeWeek = new Date();
+        let dag = dagVanDeWeek.getDay() - 1;
+
+        let dagBenamingen = ['maandag', 'dinsdag','woensdag','donderdag','vrijdag','zaterdag','zondag'];
+
+        if (dag < 5){
+            document.write(`<p>Vandaag is ${dagBenamingen[dag]}</p>`);
+            document.write(`<p>Het is werkdag dus aan de slag</p>`);
+        }else {
+            document.write(`Vandaag is ${dagBenamingen[dag]}`);
+            document.write(`Het is weekdag lekker genieten`);
+        }
+
+        console.log(dag);
+    </script> 
+    
+</body>
+</html>
